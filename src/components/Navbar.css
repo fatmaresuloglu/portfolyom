@@ -1,0 +1,52 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex; /* Yan yana dizilim */
+  justify-content: space-between; /* Logo sola, linkler sağa */
+  align-items: center; /* Dikeyde ortala */
+  padding: 1.5rem 10%; /* Kenar boşlukları */
+  background-color: #ffffff; /* Beyaz arka plan */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Altına hafif gölge */
+  
+  /* Menünün sayfa kaydırılsa bile üstte sabit kalması için: */
+  position: sticky; 
+  top: 0;
+  z-index: 1000; /* Diğer öğelerin üstünde kalması için */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none; /* Liste noktalarını kaldır */
+  display: flex; /* Linkleri yan yana diz */
+  gap: 30px; /* Linkler arası boşluk */
+}
+
+.nav-links li a {
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff; /* Üzerine gelince mavi olsun */
+}
+
+/* Mobil ekranlar için basit uyumluluk */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 5%;
+  }
+  
+  .nav-links {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,108 @@
+
+/* src/components/Hero.css */
+
+.hero-container {
+  display: flex; /* Yan yana dizilim sağlar */
+  align-items: center; /* Dikeyde ortalar */
+  justify-content: space-between; /* Aralarını açar */
+  padding: 0 10%; /* Kenarlardan boşluk */
+  height: 90vh; /* Ekranın %90'ını kaplar */
+  background-color: #f8f9fa; /* Hafif gri arka plan */
+}
+
+/* Sol Taraf: Yazılar */
+.hero-content {
+  flex: 1; /* Alanın yarısını kapla */
+  padding-right: 50px;
+}
+
+.hero-greeting {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Butonlar */
+.btn {
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-right: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.btn-secondary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Sağ Taraf: Resim */
+.hero-image {
+  flex: 1; /* Alanın diğer yarısını kapla */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover; /* Resmi ezmeden kırpar */
+  border-radius: 50%; /* Yuvarlak yapar */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Gölge ekler */
+  border: 5px solid white;
+}
+
+/* Mobil Uyumluluk (Responsive) */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse; /* Mobilde alt alta, resim üstte */
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 50px 20px;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+    margin-top: 30px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
