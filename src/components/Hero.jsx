@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="hero" className="hero-container">
       <div className="hero-content">
-        <h3 className="hero-greeting">Merhaba, ben [Adın Soyadın] 👋</h3>
+        <h3 className="hero-greeting">Merhaba, ben Fatma Resuloğlu👋</h3>
         <h1 className="hero-title">Frontend Geliştirici</h1>
         <p className="hero-description">
           React ve modern web teknolojileri kullanarak kullanıcı dostu, 

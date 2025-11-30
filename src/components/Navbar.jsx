@@ -5,7 +5,7 @@ import './Navbar.css'; // Birazdan oluşturacağız
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">Adın Soyadın</div>
+      <div className="logo">FATMA RESULOĞLU</div>
       <ul className="nav-links">
         <li><a href="#hero">Ana Sayfa</a></li>
         <li><a href="#about">Hakkımda</a></li>
