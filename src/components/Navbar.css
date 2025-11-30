@@ -1,45 +1,49 @@
 /* src/components/Navbar.css */
 
 .navbar {
-  display: flex; /* Yan yana dizilim */
-  justify-content: space-between; /* Logo sola, linkler sağa */
-  align-items: center; /* Dikeyde ortala */
-  padding: 1.5rem 10%; /* Kenar boşlukları */
-  background-color: #ffffff; /* Beyaz arka plan */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Altına hafif gölge */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10%;
+  /* YENİ: Arka planı yumuşak şeftali tonu yaptık */
+  background-color: var(--bg-secondary); 
+  /* YENİ: Gölgeyi daha hafiflettik */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
   
-  /* Menünün sayfa kaydırılsa bile üstte sabit kalması için: */
   position: sticky; 
   top: 0;
-  z-index: 1000; /* Diğer öğelerin üstünde kalması için */
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  /* Logoyu vurgu rengimizle yazalım, daha şık durur */
+  color: var(--accent-color); 
   font-weight: bold;
-  color: #333;
   cursor: pointer;
+  font-family: 'cursive', sans-serif; /* İstersen el yazısı gibi yapabilirsin */
 }
 
 .nav-links {
-  list-style: none; /* Liste noktalarını kaldır */
-  display: flex; /* Linkleri yan yana diz */
-  gap: 30px; /* Linkler arası boşluk */
+  list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-links li a {
-  text-decoration: none; /* Alt çizgiyi kaldır */
-  color: #333;
+  text-decoration: none;
+  /* Linkler yumuşak koyu gri */
+  color: var(--text-dark);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #007bff; /* Üzerine gelince mavi olsun */
+  /* Üzerine gelince gül kurusu rengi */
+  color: var(--accent-color); 
 }
 
-/* Mobil ekranlar için basit uyumluluk */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 5%;

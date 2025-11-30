@@ -1,17 +1,48 @@
-/* src/index.css */
+/* src/index.css - Pinterest Teması */
+
+/* 1. RENK PALETİ TANIMLAMA (CSS Variables) */
+:root {
+  /* Ana Arka Plan: Çok açık, sıcak bir krem rengi */
+  --bg-primary: #fffbf8; 
+  
+  /* İkincil Arka Plan (Navbar gibi): Hafif şeftali tonlu bir beyaz */
+  --bg-secondary: #fff5f2; 
+
+  /* Metin Renkleri: Sert siyah yerine yumuşak koyu gri */
+  --text-dark: #4a4a4a;
+  /* Daha silik açıklamalar için gri */
+  --text-muted: #8c8c8c; 
+
+  /* Vurgu Rengi: Pinterest pembesi/gül kurusu (Butonlar, linkler için) */
+  --accent-color: #d48c84; 
+  /* Vurgu renginin üzerine gelinceki hali (biraz daha koyusu) */
+  --accent-hover: #c07b73; 
+
+  /* Yumuşak, hafif renkli gölge efekti */
+  --soft-shadow: 0 15px 30px rgba(212, 140, 132, 0.15); 
+}
+
+/* 2. GENEL AYARLAR */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Kutuların boyutunu içindekilere göre ayarla */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Daha okunaklı font */
+  box-sizing: border-box;
+  /* Fontu biraz daha modern ve yuvarlak bir fontla değiştirelim (Eğer yüklüyse Poppins harikadır, yoksa diğerleri devreye girer) */
+  font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif; 
 }
 
 body {
-  width: 100%;
-  overflow-x: hidden; /* Yanlardan taşmayı engelle */
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary); /* Yeni krem arka plan */
+  color: var(--text-dark);
+  overflow-x: hidden;
 }
 
 html {
-  scroll-behavior: smooth; /* Linklere tıklayınca yumuşak kaysın */
+  scroll-behavior: smooth;
+}
+
+/* Vurgulu metinler için bir yardımcı sınıf */
+.highlight-text {
+    color: var(--accent-color);
+    font-weight: 600;
 }
