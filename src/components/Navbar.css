@@ -1,27 +1,23 @@
-/* src/components/Navbar.css */
+/* src/components/Navbar.css - TAM DOSYA */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 10%;
-  /* YENİ: Arka planı yumuşak şeftali tonu yaptık */
-  background-color: var(--bg-secondary); 
-  /* YENİ: Gölgeyi daha hafiflettik */
+  background-color: var(--bg-secondary);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
-  
-  position: sticky; 
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .logo {
   font-size: 1.6rem;
-  /* Logoyu vurgu rengimizle yazalım, daha şık durur */
-  color: var(--accent-color); 
+  color: var(--accent-color);
   font-weight: bold;
   cursor: pointer;
-  font-family: 'cursive', sans-serif; /* İstersen el yazısı gibi yapabilirsin */
+  font-family: 'cursive', sans-serif;
 }
 
 .nav-links {
@@ -32,7 +28,6 @@
 
 .nav-links li a {
   text-decoration: none;
-  /* Linkler yumuşak koyu gri */
   color: var(--text-dark);
   font-weight: 500;
   font-size: 1rem;
@@ -40,10 +35,52 @@
 }
 
 .nav-links li a:hover {
-  /* Üzerine gelince gül kurusu rengi */
-  color: var(--accent-color); 
+  color: var(--accent-color);
 }
 
+/* --- DİL DEĞİŞTİRME ALANI (GÜNCELLENDİ) --- */
+.lang-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Bayraklar birbirine çok yapışmasın */
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #ddd; /* Ayırıcı çizgi */
+  height: 30px; /* Hizalama için yükseklik */
+}
+
+.lang-flag {
+  width: 26px;  /* Genişlik */
+  height: 26px; /* Yükseklik (Genişlikle aynı olmalı) */
+  border-radius: 50%; /* Tam yuvarlak yap */
+  object-fit: cover; /* Resmi ezmeden ortala */
+  object-position: center; /* Resmin tam ortasını al */
+  aspect-ratio: 1 / 1; /* Kare oranını koru (Ezikliği engeller) */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Seçili Olmayan Durum */
+  opacity: 0.4;
+  filter: grayscale(100%); /* Siyah beyaz */
+  transform: scale(0.9);
+}
+
+/* Seçili Olan Bayrak */
+.lang-flag.active {
+  opacity: 1;
+  filter: grayscale(0%); /* Renkli */
+  transform: scale(1.15); /* Biraz büyüt */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Belirgin gölge */
+  border: 2px solid white; 
+  outline: 2px solid var(--accent-color); /* Dış halka */
+}
+
+.lang-flag:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Mobil Uyumluluk */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 5%;
@@ -52,5 +89,10 @@
   .nav-links {
     gap: 15px;
     font-size: 0.9rem;
+  }
+
+  .lang-container {
+    padding-left: 10px;
+    margin-left: 10px;
   }
 }

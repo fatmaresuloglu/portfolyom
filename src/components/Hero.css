@@ -15,48 +15,50 @@
 }
 
 /* --- YENİ EKLENEN BINARY BACKGROUND STİLİ --- */
-.binary-background {
-  position: absolute; /* Serbest dolaşım hakkı veriyoruz */
-  top: -50px; /* Biraz yukarıdan başlasın */
-  left: -50px; /* Biraz soldan başlasın */
-  width: 120%; /* Ekrandan daha geniş olsun */
-  height: 120%;
-  
-  /* Yazılımcı hissi veren font */
-  font-family: 'Courier New', Courier, monospace; 
-  font-weight: bold;
-  font-size: 4rem; /* Dev gibi rakamlar */
-  line-height: 1; /* Satırlar birbirine yakın olsun */
-  
-  /* Renk ayarı: Senin vurgu rengin */
-  color: var(--accent-color); 
-  
-  /* SİHİRLİ DOKUNUŞ: Çok şeffaf yapıyoruz (0.04 = %4 görünürlük) */
-  opacity: 0.04; 
-  
-  /* İçeriklerin arkasında kalsın */
-  z-index: 0; 
-  
-  /* Hafif yamuk dursun, daha artistik olur */
-  transform: rotate(-10deg); 
-  
-  /* Yazıların seçilmesini engelle (kullanıcı yanlışlıkla seçmesin) */
-  user-select: none; 
-  pointer-events: none; /* Tıklanabilir olmasın */
-  
-  /* Metin taşarsa alt satıra geçsin */
-  word-break: break-all; 
-}
+/* src/components/Hero.css */
 
-/* Sol Taraf: Yazılar */
-.hero-content {
-  flex: 1;
+/* ... .hero-container ve diğerleri aynı kalacak ... */
+
+/* --- YENİLENMİŞ DOKU (TEXTURE) STİLİ --- */
+/* src/components/Hero.css */
+
+/* --- GÜNCELLENMİŞ PEMBEMSİ & BOLD ARKA PLAN --- */
+.binary-overlay {
+  position: absolute;
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%; 
+  
+  /* FONT AYARLARI */
+  font-family: 'Courier New', Courier, monospace; /* Klasik, kalın kod fontu */
+  font-size: 20px; /* Biraz daha büyüttük, doku daha net olsun */
+  font-weight: bold; /* İSTEDİĞİN GİBİ: Kalın harfler */
+  letter-spacing: 6px; /* Harfler arası iyice açık (Ferahlık için) */
+  line-height: 2; /* Satır araları */
+  
+  /* RENK AYARLARI */
+  /* Buraya özel, çok tatlı bir "Toz Pembe" kodu girdim */
+  color: #eebec2; 
+  
+  /* Görünürlük ayarı: */
+  /* Rakamlar kalın olduğu için opaklığı düşük tutuyoruz ki göz yormasın */
+  /* Ama pembe rengi belli olacak kadar da açık */
+  opacity: 0.12; 
+  
+  /* KONUM VE HAREKET */
+  transform: rotate(-15deg); /* Hafif çapraz duruş */
+  
+  /* Diğer standart ayarlar */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* YENİ: Binary kodun üstüne çıkması için z-index veriyoruz */
-  position: relative; 
-  z-index: 1; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
 }
 
 .hero-greeting {

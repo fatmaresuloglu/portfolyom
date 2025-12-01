@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "title": "Frontend Geliştirici",
+    "description": "Estetik ve teknolojiyi birleştiriyorum. React ile modern, kullanıcı dostu ve akılda kalıcı web deneyimleri tasarlıyorum.",
+    "btnPrimary": "Projelerimi Gör",
+    "btnSecondary": "İletişime Geç"
+  }
+}

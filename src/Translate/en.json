@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Fronten Developer",
+    "description": "Combining aesthetics with technology. I design modern, user-friendly, and memorable web experiences using React.",
+    "btnPrimary": "View Projects",
+    "btnSecondary": "Contact Me"
+  }
+}
