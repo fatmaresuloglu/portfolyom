@@ -1,0 +1,201 @@
+
+/* src/components/About.css */
+
+.about-section {
+  padding: 5rem 10%;
+  background-color: var(--bg-primary);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+/* Başlığın altına minik süs çizgisi */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.bio-container {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-text {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+/* IZGARA YAPISI */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* İkiye böl */
+  gap: 30px;
+}
+
+.about-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* KART TASARIMI (SOFT LOOK) */
+.info-card {
+  background-color: white; /* Kart içi beyaz */
+  padding: 2rem;
+  border-radius: 20px; /* Yuvarlak köşeler */
+  box-shadow: var(--soft-shadow); /* Tanımladığımız yumuşak gölge */
+  border: 1px solid rgba(0,0,0,0.02);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px); /* Üzerine gelince hafif kalksın */
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--bg-secondary);
+  padding-bottom: 10px;
+}
+
+/* EĞİTİM DETAYLARI */
+.edu-item h4 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.edu-item p {
+  color: var(--text-muted);
+  margin: 5px 0;
+}
+
+.date-badge {
+  display: inline-block;
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* YETENEK ETİKETLERİ (PILLS) */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: var(--bg-secondary);
+  color: var(--text-dark);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.skill-pill:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* DENEYİM LİSTESİ */
+.exp-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #eee;
+}
+.binary-overlay {
+  position: absolute;
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%; 
+  
+  /* FONT AYARLARI */
+  font-family: 'Courier New', Courier, monospace; /* Klasik, kalın kod fontu */
+  font-size: 20px; /* Biraz daha büyüttük, doku daha net olsun */
+  font-weight: bold; /* İSTEDİĞİN GİBİ: Kalın harfler */
+  letter-spacing: 6px; /* Harfler arası iyice açık (Ferahlık için) */
+  line-height: 2; /* Satır araları */
+  
+  /* RENK AYARLARI */
+  /* Buraya özel, çok tatlı bir "Toz Pembe" kodu girdim */
+  color: #eebec2; 
+  
+  /* Görünürlük ayarı: */
+  /* Rakamlar kalın olduğu için opaklığı düşük tutuyoruz ki göz yormasın */
+  /* Ama pembe rengi belli olacak kadar da açık */
+  opacity: 0.12; 
+  
+  /* KONUM VE HAREKET */
+  transform: rotate(-15deg); /* Hafif çapraz duruş */
+  
+  /* Diğer standart ayarlar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  z-index: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.exp-item:last-child {
+  border-bottom: none;
+}
+
+.company-name {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.date-text {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.exp-desc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr; /* Mobilde tek kolon */
+  }
+  
+  .about-section {
+    padding: 3rem 5%;
+  }
+}

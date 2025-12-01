@@ -2,6 +2,8 @@
 import React from 'react';
 import './Hero.css';
 import { useLanguage } from '../LanguageContext'; // Hook'u ekle
+import profileImg from '../assets/image_1.jpeg';
+
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -31,10 +33,7 @@ const Hero = () => {
       </div>
       
       <div className="hero-image">
-        <img 
-          src="../assets/image_1.jpeg" 
-          alt="Profil Fotoğrafı" 
-        />
+        <img src={profileImg} alt="Profil Fotoğrafı" />
       </div>
     </section>
   );

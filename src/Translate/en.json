@@ -11,5 +11,34 @@
     "description": "Combining aesthetics with technology. I design modern, user-friendly, and memorable web experiences using React.",
     "btnPrimary": "View Projects",
     "btnSecondary": "Contact Me"
+  },
+ 
+  "about": {
+    "title": "About Me",
+    "bio": "Hello! I am Fatma Resuloğlu, a Computer Engineering graduate from Zonguldak Bülent Ecevit University. I am passionate about AI, mobile app development, and designing user-friendly interfaces. I love building sustainable and accessible projects using React Native, Flutter, and Python.",
+    "educationTitle": "Education",
+    "education": {
+      "school": "Zonguldak Bülent Ecevit University",
+      "department": "Computer Engineering",
+      "date": "2022 - 2025"
+    },
+    "experienceTitle": "Experience",
+    "experiences": [
+      {
+        "company": "Stellar Technology Inc.",
+        "role": "Engineering Intern",
+        "date": "June 2025 - August 2025",
+        "desc": "Developed a mobile app using React Native to monitor gas station operations. Implemented JWT, RTL support, and Theme management."
+      },
+      {
+        "company": "FLO Retailing",
+        "role": "Intern",
+        "date": "August 2024",
+        "desc": "Worked on e-commerce site development, UI design, and database management."
+      }
+    ],
+    "skillsTitle": "Skills",
+    "skills": ["React", "React Native", "JavaScript", "TypeScript", "Python", "Flutter", "Dart", "Git", "HTML/CSS", "AI"]
   }
+
 }

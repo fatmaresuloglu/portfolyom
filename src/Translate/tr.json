@@ -11,5 +11,32 @@
     "description": "Estetik ve teknolojiyi birleştiriyorum. React ile modern, kullanıcı dostu ve akılda kalıcı web deneyimleri tasarlıyorum.",
     "btnPrimary": "Projelerimi Gör",
     "btnSecondary": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "bio": "Merhaba! Ben Fatma Resuloğlu. Zonguldak Bülent Ecevit Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yapay zeka, mobil uygulama geliştirme ve kullanıcı dostu arayüzler tasarlama konularında tutkuluyum. React Native, Flutter ve Python teknolojileriyle sürdürülebilir ve erişilebilir projeler geliştirmeyi seviyorum.",
+    "educationTitle": "Eğitim",
+    "education": {
+      "school": "Zonguldak Bülent Ecevit Üniversitesi",
+      "department": "Bilgisayar Mühendisliği",
+      "date": "2022 - 2025"
+    },
+    "experienceTitle": "Deneyim",
+    "experiences": [
+      {
+        "company": "Stellar Teknoloji A.Ş.",
+        "role": "Stajyer Mühendis",
+        "date": "Haziran 2025 - Ağustos 2025",
+        "desc": "React Native ile akaryakıt istasyonu operasyonlarını izleyen mobil uygulama geliştirdim. JWT, RTL desteği ve Tema yönetimi ekledim."
+      },
+      {
+        "company": "FLO Mağazacılık",
+        "role": "Stajyer",
+        "date": "Ağustos 2024",
+        "desc": "E-ticaret sitesi geliştirmesi, arayüz tasarımı ve veritabanı yönetimi üzerine çalıştım."
+      }
+    ],
+    "skillsTitle": "Yetenekler",
+    "skills": ["React", "React Native", "JavaScript", "TypeScript", "Python", "Flutter", "Dart", "Git", "HTML/CSS", "Yapay Zeka"]
   }
 }
