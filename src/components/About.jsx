@@ -4,12 +4,18 @@ import './About.css';
 import { useLanguage } from '../LanguageContext';
 
 const About = () => {
+  // Tüm veriler t (translation/language) hook'undan geliyor
   const { t } = useLanguage();
   const binaryRow = "01001 0110 10010 1101 00011 10101 0110 0010 11010 1011 0001 ";
+  // eslint-disable-next-line
   const binaryText = binaryRow.repeat(100);
+
+  // t.about.languages listesinin tanımlı olup olmadığını kontrol et
+  const languages = t.about.languages || [];
 
   return (
     <section id="about" className="about-section">
+      
       <h2 className="section-title">{t.about.title}</h2>
       
       {/* BİYOGRAFİ KISMI */}
@@ -18,7 +24,8 @@ const About = () => {
       </div>
 
       <div className="about-grid">
-        {/* SOL KOLON: EĞİTİM VE YETENEKLER */}
+        
+        {/* SOL KOLON: EĞİTİM, YETENEKLER VE DİLLER */}
         <div className="about-col">
           {/* Eğitim Kartı */}
           <div className="info-card">
@@ -39,6 +46,22 @@ const About = () => {
               ))}
             </div>
           </div>
+
+          {/* YABANCI DİL KARTI - T.ABOUT KULLANILARAK DÜZELTİLDİ */}
+          {/* Sadece languages dizisi boş değilse göster */}
+          {languages.length > 0 && (
+            <div className="info-card">
+              <h3 className="card-title">🌍 {t.about.languagesTitle}</h3>
+              <div className="languages-list">
+                {languages.map((lang, index) => (
+                  <div key={index} className="lang-item">
+                    <span className="lang-name">{lang.name}</span>
+                    <span className="lang-level">{lang.level}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* SAĞ KOLON: DENEYİMLER */}
@@ -57,6 +80,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   );

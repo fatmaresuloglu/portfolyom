@@ -23,20 +23,96 @@
     },
     "experienceTitle": "Deneyim",
     "experiences": [
-      {
-        "company": "Stellar Teknoloji A.Ş.",
-        "role": "Stajyer Mühendis",
-        "date": "Haziran 2025 - Ağustos 2025",
-        "desc": "React Native ile akaryakıt istasyonu operasyonlarını izleyen mobil uygulama geliştirdim. JWT, RTL desteği ve Tema yönetimi ekledim."
+     {
+        "role": "STAJYER",
+        "company": "STELLAR TEKNOLOJİ A.Ş. İSTANBUL",
+        "date": "30.06.2025/29.08.2025",
+        "desc": [
+          "Akaryakıt istasyonu operasyonları (satış ve vardiya verileri gibi) dijital olarak izlemek amacıyla React Native mobil uygulamasının geliştirilmesine öncülük ettim.",
+          "Kullanıcı deneyimini artırmak için kullanıcı kimlik doğrulama (giriş/kayıt), ayrıntılı profil düzenleme ve sorunsuz tema geçişi (Koyu/Açık mod) gibi kritik kullanıcı arayüzü özelliklerini geliştirdim ve uyguladım.",
+          "Kapsayıcı bir kullanıcı arayüzü sağlamak amacıyla farklı uluslararası pazarlar için RTL (Sağdan Sola) dil desteği ekleyerek uygulamanın hazır hale getirilmesini sağladım.",
+          "Kalıcı oturum yönetimi için sağlam JWT tabanlı kimlik doğrulama entegrasyonu yaptım ve erişim belirteçlerini AsyncStorage kullanarak güvenli bir şekilde yönettim.",
+          "Dış kaynakların uygulamayı kişiselleştirilmiş verilerle (girişte özel karşılama mesajları gibi) açmasına olanak tanıyan derin bağlantı (deep linking) işlevini geliştirdim.",
+          "Uygulamanın kurumsal operasyonel standartları karşılamasını sağlamak için distribütör referans numaraları dahil olmak üzere gerçek kurumsal iş mantığı entegrasyonunda backend ekibiyle aktif olarak işbirliği yaptım."
+        ]
       },
+      
       {
-        "company": "FLO Mağazacılık",
-        "role": "Stajyer",
-        "date": "Ağustos 2024",
-        "desc": "E-ticaret sitesi geliştirmesi, arayüz tasarımı ve veritabanı yönetimi üzerine çalıştım."
+        "role": "STAJYER",
+        "company": "FLO PERAKENDECİLİK VE PAZARLAMA A.Ş. İSTANBUL",
+        "date": "01.08.2024/28.08.2024",
+        "desc": [
+        "Özellikle ayakkabı satışına odaklanmış, işlevsel bir e-ticaret web sitesinin geliştirilmesine katkıda bulundum.",
+        "Son derece sezgisel ve kullanıcı dostu bir arayüz tasarlayıp uygulayarak genel kullanıcı deneyimini (UX) önemli ölçüde iyileştirdim.",
+        "Çeşitli cihazlarda ve ekran boyutlarında duyarlı tasarım sağlamak için frontend optimizasyonuna odaklandım.",
+        "Ürün katalog görüntülemesi ve işlem süreçleri için gerekli API'lerle frontend'i bağlamak üzere backend entegrasyonlarına katıldım.",
+        "Veri bütünlüğünü ve ürün/kullanıcı bilgilerinin verimli bir şekilde alınmasını sağlayarak veri tabanı yönetimi görevlerinde yardımcı oldum."
+      ]
       }
+    ],
+    "languagesTitle": "Yabancı Diller",
+    "languages": [
+  
+      { "name": "İngilizce", "level": " B2 - Üst Orta" }
     ],
     "skillsTitle": "Yetenekler",
     "skills": ["React", "React Native", "JavaScript", "TypeScript", "Python", "Flutter", "Dart", "Git", "HTML/CSS", "Yapay Zeka"]
+  },
+  
+  "common": {
+    "technical_details": "Teknik Detaylar"
+  },
+  "projects": {
+    "title": "Öne Çıkan Projelerim",
+    "subtitle": "Yapay Zeka, Mobil Uygulama ve Bulut Entegrasyonuna Odaklı Çözümler",
+    "info_block": "Diğer teknik yeterliliklerim (Python, Flutter, Dart, React Native ve Azure) staj ve projelerimde başarıyla kullanılmıştır.",
+    
+    "project_1": {
+      "title": "Yapay Zeka ile Hayvan Tespit Uygulaması",
+      "support": "Kişisel Proje",
+    "description": "Kullanıcı tarafından yüklenen veya kameradan çekilen fotoğraflardaki hayvan türlerini yüksek doğrulukla tespit ve tanıma. Bu sayede kullanıcılara doğadaki canlılar hakkında anlık bilgi sunulması hedeflenmiştir.",
+      "details": [
+        {
+          "key": "Ön Uç / Mobil Arayüz",
+          "value": "Kullanıcı dostu ve platformlar arası uyumlu bir deneyim sağlamak için Flutter kullanılarak geliştirilmiştir. Mobil uygulama, görüntü yükleme ve tanıma sonuçlarını görselleştirme işlevlerini üstlenir."
+        },
+        {
+          "key": "Arka Uç / Yapay Zeka Servisi",
+         "value": "Görüntü işleme ve sınıflandırma modelini barındırmak ve çalıştırmak için Python tabanlı Flask mikro-çerçevesi kullanılmıştır."
+        },
+        {
+          "key": "Sınıflandırma Süreci",
+          "value": "Mobil uygulamadan gelen görüntüler, Flask sunucusu üzerindeki eğitilmiş Derin Öğrenme modeli (CNN) tarafından işlenir ve sonuç RESTful API üzerinden geri gönderilir."
+        }
+      ]
+    },
+    
+    "project_2": {
+      "title": "LoRa Teknolojisi Kullanılarak Uzaktan Sağlık Takip Sistemi",
+      "support": "TÜBİTAK 2209-A Destekli Proje",
+      "description": "Uzaktan toplanan sağlık verilerinin mobil ortamda anlık izlenmesine odaklanan, TÜBİTAK 2209-A tarafından desteklenmiş yenilikçi bir tam yığın çözümdür. Ana odak, LoRa ağından gelen verinin Microsoft Azure bulut ekosisteminde işlenmesi ve mobil platforma sunulmasıdır.",
+      "details": [
+        {
+          "key": "Ana Sorumluluklar",
+         "value": "Projenin Flutter ile Mobil Uygulama Geliştirme ve Python/Flask ile Arka Uç Veri İşleme aşamalarının tamamı tarafımdan yönetilmiştir."
+        },
+        {
+          "key": "Bulut Entegrasyonu",
+         "value": "Sensör verilerinin toplandığı Azure Bulut Platformu'ndan (IoT Hub veya Storage) veri çekme süreçleri tasarlanmış ve uygulanmıştır."
+        },
+        {
+          "key": "Veri İşleme ve API",
+          "value": "Azure'dan gelen ham verileri işleyen Python tabanlı Flask API servisi kurulmuş, stabil ve ölçeklenebilir RESTful API uç noktaları geliştirilmiştir. "
+        },
+        {
+          "key": "Mobil Arayüz ve İzleme",
+          "value": "Flask API üzerinden alınan sağlık verilerinin gerçek zamanlı grafiksel izlenmesi ve kritik durumlar için anlık bildirimlerle sunulması amacıyla mobil arayüz Flutter ile geliştirilmiştir. "
+        },
+        {
+          "key": "Tam Entegrasyon Mimarisi",
+          "value": "Azure, Flask API ve Flutter mobil uygulaması arasındaki üç katmanlı (three-tier) veri iletişim mimarisi başarıyla entegre edilmiştir."
+        }
+      ]
+    }
   }
 }

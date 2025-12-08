@@ -22,23 +22,100 @@
       "department": "Computer Engineering",
       "date": "2022 - 2025"
     },
+
+    "languagesTitle": "Foreign Languages",
+    "languages": [
+      
+      { "name": "English", "level": " B2 - Upper Intermediate" }
+    ],
     "experienceTitle": "Experience",
     "experiences": [
+    
       {
-        "company": "Stellar Technology Inc.",
-        "role": "Engineering Intern",
-        "date": "June 2025 - August 2025",
-        "desc": "Developed a mobile app using React Native to monitor gas station operations. Implemented JWT, RTL support, and Theme management."
+        "role": "INTERN",
+        "company": "STELLAR TECHNOLOGY INC. ISTANBUL",
+        "date": "30.06.2025/29.08.2025",
+        "desc": [
+          "Spearheaded the development of a React Native mobile application designed for digitally monitoring fuel station operations, including real-time sales and shift data.",
+          "Engineered and implemented critical user-facing features such as user authentication (login/registration), detailed profile editing, and seamless theme switching (Dark/Light mode) to enhance user experience.",
+          "Ensured application readiness for diverse international markets by building in RTL (Right-to-Left) language support for an inclusive user interface.",
+          "Integrated robust JWT-based authentication and securely managed access tokens using AsyncStorage for persistent session management.",
+          "Developed deep linking functionality to allow external sources to open the app with personalized data, such as custom greeting messages upon entry.",
+          "Actively collaborated with the backend team to integrate real-world enterprise logic, including distributor reference numbers, ensuring the application met corporate operational standards."
+        ]
       },
-      {
-        "company": "FLO Retailing",
-        "role": "Intern",
-        "date": "August 2024",
-        "desc": "Worked on e-commerce site development, UI design, and database management."
-      }
+     {
+      "role": "INTERN",
+      "company": "FLO RETAILING AND MARKETING INC. ISTANBUL",
+      "date": "01.08.2024/28.08.2024",
+      "desc": [
+        "Contributed to the development of a functional e-commerce website specifically focused on shoe sales.",
+        "Significantly improved the overall user experience (UX) by designing and implementing a highly intuitive and user-friendly interface.",
+        "Focused on frontend optimization to ensure responsive design across various devices and screen sizes.",
+        "Engaged in backend integrations to connect the frontend with necessary APIs for product catalog display and transaction processing.",
+        "Assisted in database management tasks, ensuring data integrity and efficient retrieval of product and user information."
+      ]
+    }
     ],
     "skillsTitle": "Skills",
     "skills": ["React", "React Native", "JavaScript", "TypeScript", "Python", "Flutter", "Dart", "Git", "HTML/CSS", "AI"]
+  },
+  
+  "common": {
+    "technical_details": "Technical Details"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Solutions Focused on AI, Mobile App Development, and Cloud Integration",
+    "info_block": "My other technical proficiencies (Python, Flutter, Dart, React Native, and Azure) have been successfully used in my internships and projects.",
+    
+    "project_1": {
+      "title": "AI-Powered Animal Detection Application",
+      "support": "Personal Project",
+      "description": "To detect and recognize animal species with high accuracy from photos uploaded by the user or taken with the camera, providing instant information about the wildlife. ",
+      "details": [
+        {
+          "key": "Front-End / Mobile Interface",
+          "value": "Developed using Flutter to ensure a user-friendly and cross-platform experience. The mobile application handles image upload and visualization of recognition results."
+        },
+        {
+          "key": "Back-End / AI Service",
+          "value": "A Python-based Flask micro-framework was used to host and run the image processing and classification model."
+        },
+        {
+          "key": "Classification Process",
+          "value": "Images from the mobile app are processed and classified by a trained Deep Learning model (CNN) on the Flask server, and the result is sent back via RESTful API."
+        }
+      ]
+    },
+    
+    "project_2": {
+      "title": "Remote Health Monitoring System Using LoRa Technology",
+      "support": "TÜBİTAK 2209-A Supported Project",
+      "description": "An innovative full-stack solution supported by TÜBİTAK 2209-A, focusing on real-time mobile monitoring of remotely collected health data.The main focus is processing data from the LoRa network within the Microsoft Azure cloud ecosystem and presenting it on a mobile platform.",
+      "details": [
+        {
+          "key": "My Main Responsibilities",
+           "value": "I managed all phases of the project, including Mobile Application Development with Flutter and Back-End Data Processing with Python/Flask."
+        },
+        {
+          "key": "Cloud Integration",
+         "value": "Designed and implemented data retrieval processes from the Azure Cloud Platform (e.g., Azure IoT Hub or Azure Storage), where sensor data is collected."
+        },
+        {
+          "key": "Data Processing and API",
+          "value": "Set up and managed the Python-based Flask API service that processes raw sensor data from Azure, and developed stable and scalable RESTful API endpoints. "
+        },
+        {
+          "key": "Mobile Interface and Monitoring",
+          "value": "The mobile interface was developed from scratch using Flutter for near real-time graphical monitoring of health data and instant notifications for critical situations. "
+        },
+        {
+          "key": "Full Integration Architecture",
+          "value": "Successfully integrated the three-tier data communication architecture between Azure, the Flask API, and the Flutter mobile application. "
+        }
+      ]
+    }
   }
-
 }
+
