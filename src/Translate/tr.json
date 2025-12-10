@@ -114,5 +114,56 @@
         }
       ]
     }
+  },
+  "contact": {
+    "title": "İletişim",
+    "github_label": "GitHub Profili",
+    "contact_form_btn": "İletişim Formunu Kullanın", 
+    "note_ref_available": "Referanslar talep üzerine memnuniyetle sunulacaktır."
+  },
+
+  "education": {
+    "title": "Eğitim",
+    "university": "Zonguldak Bülent Ecevit Üniversitesi",
+    "department": "Bilgisayar Mühendisliği",
+    "years": "2022 - 2025",
+    "languages": "Diller",
+    "english": "İngilizce"
+  },
+
+  "skills": {
+    "title": "Yetenekler",
+    "languages_header": "Programlama Dilleri",
+    "frameworks_header": "Çerçeveler",
+    "web_header": "Web",
+    "ai_header": "Yapay Zeka/ML",
+    "tools_header": "Araçlar",
+    "frameworks_ai_header": "Çerçeveler & Yapay Zeka",
+    "items": {
+      "c_cpp": "C/C++",
+      "python": "Python",
+      "dart": "Dart",
+      "flutter": "Flutter",
+      "react_native": "React Native",
+      "html_css": "HTML/CSS",
+      "js_ts": "JavaScript/TypeScript",
+      "machine_learning": "Makine Öğrenmesi",
+      "azure": "Azure",
+      "git": "Git"
+    }
+  },
+
+  "experience": {
+    "title": "Deneyim",
+    "items": {
+      "0": {
+        "company": "STELLAR TEKNOLOJİ A.Ş. İSTANBUL",
+        "date": "30.06.2025/29.08.2025"
+      },
+      "1": {
+        "company": "FLO PERAKENDECİLİK VE PAZARLAMA A.Ş. İSTANBUL",
+        "date": "01.08.2024/28.08.2024"
+      }
+    }
   }
 }

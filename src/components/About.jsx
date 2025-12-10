@@ -2,6 +2,7 @@
 import React from 'react';
 import './About.css';
 import { useLanguage } from '../LanguageContext';
+import { SkillsList } from './SkillsContact';
 
 const About = () => {
   // Tüm veriler t (translation/language) hook'undan geliyor
@@ -36,16 +37,9 @@ const About = () => {
               <span className="date-badge">{t.about.education.date}</span>
             </div>
           </div>
-
-          {/* Yetenekler Kartı */}
-          <div className="info-card">
-            <h3 className="card-title">🚀 {t.about.skillsTitle}</h3>
-            <div className="skills-container">
-              {t.about.skills.map((skill, index) => (
-                <span key={index} className="skill-pill">{skill}</span>
-              ))}
-            </div>
-          </div>
+          
+            {/* Skills Kartı (ortak component) */}
+            <SkillsList t={t} />
 
           {/* YABANCI DİL KARTI - T.ABOUT KULLANILARAK DÜZELTİLDİ */}
           {/* Sadece languages dizisi boş değilse göster */}

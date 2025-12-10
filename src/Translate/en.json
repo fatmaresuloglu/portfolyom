@@ -116,6 +116,57 @@
         }
       ]
     }
+  },
+  
+  "contact": {
+    "title": "Contact",
+    "github_label": "GitHub Profile",
+    "contact_form_btn": "Use Contact Form", 
+    "note_ref_available": "References will be gladly furnished upon request."
+  },
+
+  "education": {
+    "title": "Education",
+    "university": "Zonguldak Bülent Ecevit University",
+    "department": "Computer Engineering",
+    "years": "2022 - 2025",
+    "languages": "Languages",
+    "english": "English"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "languages_header": "Languages",
+    "frameworks_header": "Frameworks",
+    "web_header": "Web",
+    "ai_header": "AI/ML",
+    "tools_header": "Tools",
+    "frameworks_ai_header": "Frameworks & AI",
+    "items": {
+      "c_cpp": "C/C++",
+      "python": "Python",
+      "dart": "Dart",
+      "flutter": "Flutter",
+      "react_native": "React Native",
+      "html_css": "HTML/CSS",
+      "js_ts": "JavaScript/TypeScript",
+      "machine_learning": "Machine Learning",
+      "azure": "Azure",
+      "git": "Git"
+    }
+  },
+
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "0": {
+        "company": "STELLAR TECHNOLOGY INC. ISTANBUL",
+        "date": "30.06.2025/29.08.2025"
+      },
+      "1": {
+        "company": "FLO RETAILING AND MARKETING INC. ISTANBUL",
+        "date": "01.08.2024/28.08.2024"
+      }
+    }
   }
 }
-

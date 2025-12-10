@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero'; // Yeni eklediğimiz satır
 import About from './components/About';
 import Projects from './components/Projects'; 
+import SkillsContact from './components/SkillsContact';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero /> {/* Navbar'ın hemen altına ekledik */}
       <About />
       <Projects />
+      <SkillsContact />
     </div>
   )
 }
